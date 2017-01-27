@@ -1,0 +1,218 @@
+body{
+background-image:url("depositphotos_9037521-stock-illustration-seamless-light-colours-wallpaper-pattern.jpg");
+
+
+}
+
+#logo{
+
+margin-left:100px;
+}
+#span{
+
+margin-left:20px;
+margin-top:10px;
+}
+
+
+.borders{
+
+border:1px solid black;}
+
+/* navbar starts */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E6E6FA;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/*navbar ends*/
+
+
+
+
+#nav{
+
+text-align:center;
+margin-top:0px;
+
+background-image:url("52570747-wallpaper-wallpaper.jpg");
+}
+
+.borders{
+border:1px solid black;
+}
+
+#btn{
+
+width:100%;
+
+}
+
+
+/*home page.....slider....jumbotron...etc.    starts*/
+
+
+
+#carousel-example-generic{
+
+margin-top:5px;
+}
+
+
+#my{
+
+margin-top:50px;
+text-align:center;
+color:black;
+}
+
+#im{
+margin-top:20px;
+margin-bottom:10px;
+
+}
+
+
+
+hr { background-color: blue; height: 1px; border: 0; }
+
+
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+
+ font-size: 40px;
+	
+}
+.carousel-caption h3 {
+	padding: .5em;
+}
+.carousel .icon-container {
+	display: inline-block;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 1em;
+	text-align: center;
+	border-radius: 50%;
+}
+.carousel-caption button {
+	border-color: #00bfff;
+	margin-top: 1em; 
+}
+#jumbo{
+
+margin-top:50px;
+}
+
+
+#jb{
+margin-left:20px;
+margin-top:70px;
+}
+
+
+
+#jpara{
+
+margin-top:50px;
+}
+.jumbotron {
+
+    height: 500px;
+	width:100%;
+	text-align:center;
+}
+
+.jumbotron h1 {
+    color: #fff
+    font-size: 48px
+    font-weight: bold
+}
+
+.jumbotron p {
+    color: #fff
+    font-size: 20px
+}
+
+
+
+/*home page......slider....jumbotron ends....*/
+
+
+
+
+
+
+
+
+foo{
+
+margin-top:50px;
+text-align;center;
+color:black;
+
+
+}
+
+#about{
+margin-top:50px;
+}
+
+#para{
+
+color:black;
+}
+
+
+#contact{
+
+
+color:black;
+margin-top:20px;
+
+}
+
+#copy{
+
+margin-top:0px;
+background-color:#778899;
+
+
+}
