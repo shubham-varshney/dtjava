@@ -19,7 +19,17 @@
 </head>
 <body>
 
-<div class="contaimer">
+<script>
+    $(document).ready(function(){
+
+        $('.table').DataTable({
+            "lengthMenu": [[1,2,3,5,10, -1], [1,2,3,5,10, "All"]]
+        });
+    });
+</script>
+
+
+<div class="container">
 
 <h1><b><i>Product Management Page</i></b></h1>
 
@@ -33,13 +43,14 @@
 <th>Condition</th>
 <th>Price</th>
 <th></th>
-</thead>
 </tr>
+</thead>
 
-<c:foreach item="${products}" var="product">
+
+<c:forEach items="${products}" var="product">
 
 <tr>
-<td><img src="<c:url value="/resources/image/${product.productId}.png" />" alt="image" style="width:100%"></td>
+<td><img src="<c:url value="/resources/image/${product.productId}.jpg" />" alt="image" style="width:100%"></td>
 
 <td>${product.productName}</td>
 <td>${product.productCategory}</td>
@@ -48,17 +59,17 @@
 
 <td>
 
-<a href="<spring url value="/product/viewProduct/${product.productyId}"/>"><span class="glyphicon glyphicon-info-sign"></span></a>
-<a href="<spring url value="/admin/product/delete/${product.productId }"/>"><span class="glyphicon glyphicon-trash"></span></a>
-<a href="<spring url value"/admin/product/editProduct/${product.productId}"/>"><span class="glyphicon glyphicon-edit"></span></a>
+<a href="<spring:url value="/product/viewProduct/${product.productyId}"/>"><span class="glyphicon glyphicon-info-sign"></span></a>
+<a href="<spring:url value="/admin/product/delete/${product.productId}"/>"><span class="glyphicon glyphicon-trash"></span></a>
+<a href="<spring:url value="/admin/product/editProduct/${product.productId}"/>"><span class="glyphicon glyphicon-edit"></span></a>
 
 </td>
 </tr>
 
-</c:foreach>
+</c:forEach>
 </table>
 
-<a href="<spring url value="/admin/product/addProduct"/>">ADD PRODUCT</a>
+<a href="<spring:url value="/admin/product/addProduct" />">ADD PRODUCT</a>
 
 </div>
 
