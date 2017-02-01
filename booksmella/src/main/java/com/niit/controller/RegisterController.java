@@ -51,7 +51,7 @@ public class RegisterController {
 
 
 	@RequestMapping(value="/registerCustomer",method=RequestMethod.POST)
-	public ModelAndView registerCustomerPost(@ModelAttribute("customer") Customer customer, BindingResult result, HttpServletRequest request){
+	public ModelAndView registerCustomerPost(@ModelAttribute("registraion") Customer customer, BindingResult result, HttpServletRequest request){
 		
 		customerService.addCustomer(customer);
 		ModelAndView model=new ModelAndView("registersuccess");

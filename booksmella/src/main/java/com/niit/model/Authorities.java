@@ -10,18 +10,18 @@ public class Authorities {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int authoritiesId;
+	private int authorisedId;
 	
 	private String username;
 	
 	private String authority;
 
 	public int getAuthoritiesId() {
-		return authoritiesId;
+		return authorisedId;
 	}
 
-	public void setAuthoritiesId(int authoritiesId) {
-		this.authoritiesId = authoritiesId;
+	public void setAuthoritiesId(int authorisedId) {
+		this.authorisedId = authorisedId;
 	}
 
 	public String getUsername() {

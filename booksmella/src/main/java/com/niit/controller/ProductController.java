@@ -16,8 +16,8 @@ import com.niit.service.ProductService;
 
 @Controller
 public class ProductController {
-	
-	@RequestMapping("/product")
+
+	/*@RequestMapping("/product")
 	public ModelAndView getaddproduct(){
 		
 		ModelAndView model=new ModelAndView("addProduct");
@@ -26,7 +26,7 @@ public class ProductController {
 		
 	}
 	
-	@ModelAttribute("prod")
+	@ModelAttribute("product")
 	public Product newProduct(){
 		
 		return new Product();
@@ -47,5 +47,5 @@ public class ProductController {
 		
 	}
 	
-
+*/
 }

@@ -131,7 +131,7 @@ span.psw {
 
   <div class="form-group">
     <label for="password"><b>Password</b></label>
-    <input type="password" path="password" placeholder="Enter Password" name="" required class="form-control"/>
+    <input type="password" path="password" placeholder="Enter Password" name="password" required class="form-control"/>
     </div>
     
         <div class="form-group">

@@ -1,5 +1,6 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,11 +8,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+
+<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css" />" >
+<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.css" />">
+<link rel="stylesheet" href="<c:url value="/resources/css/style.css" />">
+
+<style>
+#top{
+
+margin-top:100px;
+margin-bottom:50px;
+}
+</style>
 </head>
 <body>
+<%@include file="/WEB-INF/views/templates/Header.jsp" %>
+<div class="container" id="top">
 
 <h1><center>ADD PRODUCT</center></h1>
-<form:form action="productSubmitted" method="post" commandName="prod">
+<form:form action="${pageContext.request.contextPath}/admin/product/addProduct" method="post" commandName="product" enctype="multipart/form-data" >
 
 <div class="form-group">
 <label for="productName">Product Name</label>
@@ -72,5 +87,8 @@
 <input type="submit" value"submit" class="btn btn-primary"/>
 
 </form:form>
+</div>
+<%@include file="/WEB-INF/views/templates/Footer.jsp" %>
+
 </body>
 </html>

@@ -11,7 +11,7 @@ public class User {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int usersId;
+	private int userId;
 	
 	private String username;
 	
@@ -22,11 +22,11 @@ public class User {
 	private int customerId;
 
 	public int getUsersId() {
-		return usersId;
+		return userId;
 	}
 
-	public void setUsersId(int usersId) {
-		this.usersId = usersId;
+	public void setUsersId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getUsername() {
