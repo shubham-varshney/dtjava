@@ -23,19 +23,19 @@ public class CustomerServiceImpl implements CustomerService {
 		
 	}
 
-	public void getCustomerById(int CustomerId) {
-		// TODO Auto-generated method stub
+	public Customer getCustomerById(int CustomerId) {
+		return customerDao.getCustomerById(CustomerId);
 
 	}
 
 	public List<Customer> getAllCustomers() {
 		// TODO Auto-generated method stub
-		return null;
+		return customerDao.getAllCustomers();
 	}
 
 	public Customer getCustomerByName(String username) {
 		// TODO Auto-generated method stub
-		return null;
+		return customerDao.getCustomerByName(username);
 	}
 
 }

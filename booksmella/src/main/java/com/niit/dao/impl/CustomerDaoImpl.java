@@ -54,9 +54,10 @@ public class CustomerDaoImpl implements CustomerDao {
 
 	}
 
-	public void getCustomerById(int CustomerId) {
-		// TODO Auto-generated method stub
-
+	public Customer getCustomerById(int CustomerId) {
+		
+		Session session = sessionFactory.getCurrentSession();
+        return (Customer) session.get(Customer.class, CustomerId);
 	}
 
 	public List<Customer> getAllCustomers() {
@@ -67,8 +68,13 @@ public class CustomerDaoImpl implements CustomerDao {
 	}
 
 	public Customer getCustomerByName(String username) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("from Customer where username = ?");
+        query.setString(0, username);
+
+
+        return (Customer) query.uniqueResult();
 	}
 
 }

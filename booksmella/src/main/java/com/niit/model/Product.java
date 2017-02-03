@@ -27,7 +27,7 @@ public class Product implements Serializable {
 	private String productDiscription;
 	
 	
-	private String productPrice;
+	private int productPrice;
 	
 	private String productCondition;
 	
@@ -81,11 +81,11 @@ public class Product implements Serializable {
 		this.productDiscription = productDiscription;
 	}
 
-	public String getProductPrice() {
+	public int getProductPrice() {
 		return productPrice;
 	}
 
-	public void setProductPrice(String productPrice) {
+	public void setProductPrice(int productPrice) {
 		this.productPrice = productPrice;
 	}
 

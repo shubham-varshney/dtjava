@@ -50,6 +50,21 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 	  @JoinColumn(name="shippingAddress")
 	  private ShippingAddress shippingAddress;
 	  
+	  @OneToOne
+	  @JoinColumn(name="cartId")
+	  @JsonIgnore
+	  private Cart cart;
+	  
+
+
+	public Cart getCart() {
+		return cart;
+	}
+
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
 
 
 	public int getCustomerId() {
