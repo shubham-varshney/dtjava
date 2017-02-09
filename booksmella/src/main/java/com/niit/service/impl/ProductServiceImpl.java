@@ -34,13 +34,12 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	public Product getProductById(int productId) {
-		// TODO Auto-generated method stub
-		return null;
+		return productDao.getProductById(productId);
+		
 	}
 
 	public List<Product> getProductList() {
-		// TODO Auto-generated method stub
-		return null;
+		return productDao.getProductList();
 	}
 
 }

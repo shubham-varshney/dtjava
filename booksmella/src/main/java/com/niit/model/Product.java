@@ -38,6 +38,7 @@ public class Product implements Serializable {
 	
 	private String manufacturer;
 	
+	
 	public MultipartFile getProductImage() {
 		return productImage;
 	}

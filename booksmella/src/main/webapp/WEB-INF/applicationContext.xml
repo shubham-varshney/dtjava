@@ -49,7 +49,6 @@
          <property name="maxUploadSize" value="10240000" />
     </bean>
 
-
 	<security:http>
 		<security:intercept-url pattern="/admin/**"
 			access="ROLE_ADMIN" />

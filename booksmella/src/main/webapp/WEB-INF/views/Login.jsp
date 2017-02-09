@@ -141,12 +141,7 @@ span.psw {
 
     <input type="checkbox" checked="checked" value="remember me"/>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-  s
-  
+  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
   
 
 </form>

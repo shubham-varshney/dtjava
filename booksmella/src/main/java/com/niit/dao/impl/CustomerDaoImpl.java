@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.dao.CustomerDao;
 import com.niit.model.Authorities;
+import com.niit.model.Cart;
 import com.niit.model.Customer;
 import com.niit.model.User;
 
@@ -47,10 +48,16 @@ public class CustomerDaoImpl implements CustomerDao {
 		session.saveOrUpdate(user);
 		session.saveOrUpdate(authority);
 		
+		Cart newCart = new Cart();
+        newCart.setCustomer(customer);
+        customer.setCart(newCart);
+
+        session.saveOrUpdate(customer);
+        session.saveOrUpdate(newCart);
 		session.flush();
 		
 		
-		// TODO Auto-generated method stub
+		
 
 	}
 

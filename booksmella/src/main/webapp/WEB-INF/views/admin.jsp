@@ -33,8 +33,8 @@ margin-bottom:300px;
 
 		<c:if test="${pageContext.request.userPrincipal.name !=null}">
 			<h2><center>
-				Welcome:${pageContext.request.userPrincipal.name} <a href=c:url
-					value="/j_spring_security_logout">logout</a>
+				Welcome:${pageContext.request.userPrincipal.name} 
+	        <a href="<c:url value="/j_spring_security_logout"/>">logout</a>
 			</center></h2>
 		</c:if>
 
@@ -47,7 +47,7 @@ margin-bottom:300px;
 
 
 		<h3>
-			<a href="#">customer Management</a>
+			<a href="<c:url value="/admin/customer" />">customer Management</a>
 		</h3>
 		<p>
 			<small>View detail of customers here</small>

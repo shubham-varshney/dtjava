@@ -10,6 +10,20 @@
 </head>
 <body>
 
+<script>
+
+    $(document).ready(function(){
+        var searchCondition = '${searchCondition}';
+
+        $('.table').DataTable({
+            "lengthMenu": [[1,2,3,5,10, -1], [1,2,3,5,10, "All"]],
+            "oSearch" : {"sSearch": searchCondition}
+        });
+    });
+</script>
+
+
+
 <div class="container">
 <div class="jumbotron">
 <h1>SHOP BOOKS NOW</h1>
@@ -40,6 +54,7 @@
 <td>${product.productPrice}</td>
 <td>
 <a href="<spring:url value="/product/viewProduct/${product.productId}.png"/>"><span class="glyphicon glyphicon-info-sign"></span></a>
+<a href="<spring:url value="/product/favorite/${product.productId }" />"><img src="<c:url value="/resources/images/fav.png" />" /></a></td>
 </td>
 
 

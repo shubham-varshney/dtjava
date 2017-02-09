@@ -64,7 +64,7 @@ margin-bottom:100px;
 <td>
 
 <a href="<spring:url value="/product/viewProduct/${product.productyId}"/>"><span class="glyphicon glyphicon-info-sign"></span></a>
-<a href="<spring:url value="/admin/product/delete/${product.productId}"/>"><span class="glyphicon glyphicon-trash"></span></a>
+<a href="<spring:url value="/admin/product/deleteProduct/${product.productId}"/>"><span class="glyphicon glyphicon-trash"></span></a>
 <a href="<spring:url value="/admin/product/editProduct/${product.productId}"/>"><span class="glyphicon glyphicon-edit"></span></a>
 
 </td>

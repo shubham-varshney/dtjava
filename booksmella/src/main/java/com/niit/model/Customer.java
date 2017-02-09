@@ -42,12 +42,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 	  private Boolean enabled;
 	  
 	  @OneToOne
-	  @JoinColumn(name="billingAddress")
+	  @JoinColumn(name="billingAddressId")
 	  private BillingAddress billingAddress;
 	  
 	  
 	  @OneToOne
-	  @JoinColumn(name="shippingAddress")
+	  @JoinColumn(name="shippingAddressId")
 	  private ShippingAddress shippingAddress;
 	  
 	  @OneToOne

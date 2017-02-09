@@ -48,14 +48,18 @@ public class ProductDaoImpl implements ProductDao {
 	}
 
 	public Product getProductById(int productId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Session session = sessionFactory.getCurrentSession();
+        Product product = (Product) session.get(Product.class, productId);
+        session.flush();
+
+        return product;
 	}
 
 	public List<Product> getProductList() {
 		
-			Session session=sessionFactory.getCurrentSession();
-			Query query=session.createQuery("form Product");
+			Session session=sessionFactory.openSession();
+			Query query=session.createQuery("from Product");
 			
 			List<Product>productList=query.list();
 			session.flush();

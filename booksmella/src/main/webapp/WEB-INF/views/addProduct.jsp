@@ -85,6 +85,7 @@ margin-bottom:50px;
 <br/><br/>
 
 <input type="submit" value"submit" class="btn btn-primary"/>
+<a href="<c:url value="/admin/adminProduct" />" class="btn btn-default">Cancel</a>
 
 </form:form>
 </div>

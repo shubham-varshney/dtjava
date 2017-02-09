@@ -27,8 +27,8 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
-	@Autowired
-	private JavaMailSender javaMailSender;
+	/*@Autowired
+	private JavaMailSender javaMailSender;*/
 	
 	
 	@RequestMapping("/productList/all")
@@ -59,7 +59,15 @@ public class ProductController {
 	}
 	
 	
+	/* @RequestMapping("/favorite/{productId}")
+	    public String viewSendMailPage(@PathVariable int productId, Model model) throws IOException{
+	    	Product product = productService.getProductById(productId);
+	        model.addAttribute("product", product);
+
+	        return "sendMail";
+	 }
 	
+	*/
 
 
 }
