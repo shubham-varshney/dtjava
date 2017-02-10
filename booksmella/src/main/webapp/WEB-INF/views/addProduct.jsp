@@ -38,7 +38,7 @@ margin-bottom:50px;
 <label class="checkbox-inline"><form:radiobutton path="productCategory" value="Religious Book" />Religious Book</label>
 <label class="checkbox-inline"><form:radiobutton path="productCategory" value="Educational Book" />Educational Book</label>
 <label class="checkbox-inline"><form:radiobutton path="productCategory" value="Novels" />Novels</label>
-<label class="checkbox-inline"><form:radiobutton path="productCategory" value="Preperation books" />Exam books</label>
+<label class="checkbox-inline"><form:radiobutton path="productCategory" value="Preperation books" /> 	</label>
 </div>
 
 
@@ -84,7 +84,7 @@ margin-bottom:50px;
 
 <br/><br/>
 
-<input type="submit" value"submit" class="btn btn-primary"/>
+<input type="submit" value="submit" class="btn btn-primary"/>
 <a href="<c:url value="/admin/adminProduct" />" class="btn btn-default">Cancel</a>
 
 </form:form>
